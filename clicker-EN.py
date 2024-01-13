@@ -5,7 +5,7 @@ key = input('Set the key for the limited clicker').lstrip()
 key1 = input('Set the key to activate the unlimited clicker').lstrip()
 key2 = input('Set the key to deactivate the unlimited clicker').capitalize().lstrip()
 delay = input('Set the delay for the unlimited clicker').lstrip()
-print('Скрипт активирован')
+print('The script is activated')
 if ',' in delay:
     delay = float(delay.replace(',', '.'))
 while True:
