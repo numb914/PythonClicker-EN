@@ -4,10 +4,10 @@ import keyboard
 key = input('Set the key for the limited clicker').lstrip()
 key1 = input('Set the key to activate the unlimited clicker').lstrip()
 key2 = input('Set the key to deactivate the unlimited clicker').capitalize().lstrip()
-delay = input('Set the delay for the unlimited clicker').lstrip()
+delay = float(input('Set the delay for the unlimited clicker').lstrip())
 print('The script is activated')
-if ',' in delay:
-    delay = float(delay.replace(',', '.'))
+if ',' in str(delay):
+    delay = float(str(delay).replace(',', '.'))
 while True:
     while keyboard.is_pressed(key):
         mouse.click('left')
